@@ -1,14 +1,8 @@
+import Algorithmia
+
 import pandas as pd
 
 from optimus import Optimus
-
-
-#### EXAMPLE OF USE
-
-# Either:
-#### 1. for a pandas Series
-
-print(text_1)
 
 text = pd.Series(
     [
@@ -67,17 +61,16 @@ text = pd.Series(
 )
 
 
-#### 2. from file
-#### to read from file 'words.csv' in the data folder - and convert to pandas Series
+def apply(input):
 
-text_1 = pd.read_csv("./data/words.csv", index_col=False, header=0)
-text_1 = pd.Series(text_1.iloc[:, 0])
+    #### Initialise Optimus object and run model
 
+    # o = Optimus(config_path="config.json", cutoff=6, stepsize=1)
 
-#### Initialise Optimus object and run model
+    # results = o(text_1, save_csv=True, full=True, verbose=True, runKNN=False)
 
-o = Optimus(config_path="config.json", cutoff=6, stepsize=1)
+    # results.sort_values("current_labels")
 
-results = o(text_1, save_csv=True, full=True, verbose=True, runKNN=False)
+    # return results.to_dict("records")
 
-results.sort_values("current_labels")
+    return "works"

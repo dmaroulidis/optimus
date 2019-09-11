@@ -1,12 +1,11 @@
-pandas
-dash
-dash_html_components
-dash_core_components
-plotly
-flask
-numpy
-nltk
-sklearn
-pytest
-hypothesis
-pybind11
+-i https://pypi.org/simple
+git+https://github.com/facebookresearch/fastText.git@252c8a577e6ddeb76749ef5a5afd03ae3f2a327d#egg=fasttext
+joblib==0.13.2
+nltk==3.4.5
+numpy==1.17.2
+pandas==0.25.1
+python-dateutil==2.8.0
+pytz==2019.2
+scikit-learn==0.21.3
+scipy==1.3.1
+six==1.12.0
